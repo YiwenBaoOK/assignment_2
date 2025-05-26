@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Unisa\\NewC\u002B\u002B\\Projects\\dpcpp-2025-ass2-clean-v3\\dpcpp-2025-ass2-clean-v3\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EFB13491-019B-424B-BCFB-1D454CB5D0FE}|PatientSystem\\PatientSystem.vcxproj|C:\\Unisa\\NewC\u002B\u002B\\Projects\\dpcpp-2025-ass2-clean-v3\\dpcpp-2025-ass2-clean-v3\\PatientSystem\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{EFB13491-019B-424B-BCFB-1D454CB5D0FE}|PatientSystem\\PatientSystem.vcxproj|solutionrelative:PatientSystem\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Unisa\\NewC\u002B\u002B\\Projects\\dpcpp-2025-ass2-clean-v3\\dpcpp-2025-ass2-clean-v3\\PatientSystem\\main.cpp",
+              "RelativeDocumentMoniker": "PatientSystem\\main.cpp",
+              "ToolTip": "C:\\Unisa\\NewC\u002B\u002B\\Projects\\dpcpp-2025-ass2-clean-v3\\dpcpp-2025-ass2-clean-v3\\PatientSystem\\main.cpp",
+              "RelativeToolTip": "PatientSystem\\main.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-26T11:42:25.952Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
