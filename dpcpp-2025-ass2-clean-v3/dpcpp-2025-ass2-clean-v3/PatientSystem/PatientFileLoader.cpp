@@ -14,12 +14,11 @@ using namespace std;
 
 std::vector<Patient*> PatientFileLoader::loadPatientFile(const std::string& file)
 {
-	vector<Patient*> patients{};
+    vector<Patient*> patients{};
 
     std::ifstream inFile(file);
     if (inFile.is_open()) {
         // TODO: load your file here
+        return patients;
     }
-
-    return patients;
 }
