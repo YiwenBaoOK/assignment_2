@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>9</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>405</x>
+      <y>387</y>
+      <w>189</w>
+      <h>171</h>
+    </coordinates>
+    <panel_attributes>PatientManagementSystem
+--
+
+--
++PatientManagementSystem()
++-PatientManagementSystem()
++init()
++run()
++addVitalsRecord()
++printWelcomeMessage()
++printMainMenu()
++printPatients()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>261</x>
+      <y>468</y>
+      <w>162</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>160.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>81</x>
+      <y>432</y>
+      <w>189</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>AbstractPatientDatabaseLoader
+--
+
+--
++initialiseConnection()
++loadPatients(patientsln:Vector)
+ClostConnection()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>171</x>
+      <y>513</y>
+      <w>27</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>81</x>
+      <y>594</y>
+      <w>189</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>PatientDatabaseLoader
+--
+
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>747</x>
+      <y>396</y>
+      <w>189</w>
+      <h>171</h>
+    </coordinates>
+    <panel_attributes>Patient
+--
+#_diseases:list&lt;string&gt;
+Attribute
+--
+Opeation
+Opeation</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>585</x>
+      <y>468</y>
+      <w>180</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;180.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>837</x>
+      <y>351</y>
+      <w>27</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>747</x>
+      <y>252</y>
+      <w>189</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>Person
+--
+#_firstName:string
+#_lastName:string
+#_birthday:tm
+--
++Person(firstName:string,
+lastName:string,birthday;tm)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>603</x>
+      <y>450</y>
+      <w>27</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>1
+style=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>720</x>
+      <y>450</y>
+      <w>36</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>0..*
+style=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>855</x>
+      <y>567</y>
+      <w>27</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>1
+style=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>846</x>
+      <y>594</y>
+      <w>36</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>0..*
+style=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>828</x>
+      <y>558</y>
+      <w>27</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>747</x>
+      <y>612</y>
+      <w>189</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>Vitals
+--
+#_bodyTemperature:float
+#_bloodPressure:int
+#heartRate:int
+#_respitoryRate:int
+--
+...</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>351</x>
+      <y>549</y>
+      <w>135</w>
+      <h>162</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>130.0;10.0;10.0;160.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>522</x>
+      <y>549</y>
+      <w>117</w>
+      <h>162</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;110.0;160.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>261</x>
+      <y>693</y>
+      <w>189</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>HospitalNotificationSystemFacade
+--
+
+--
++sendAlertForPatient(p: Patient)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>522</x>
+      <y>693</y>
+      <w>189</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>GPNotificationSystemFacade
+--
+
+--
++sendAlertForPatient(p: Patient)</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
