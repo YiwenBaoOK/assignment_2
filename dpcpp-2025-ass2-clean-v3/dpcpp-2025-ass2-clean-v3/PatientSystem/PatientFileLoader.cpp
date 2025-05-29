@@ -16,100 +16,72 @@ std::vector<Patient*> PatientFileLoader::loadPatientFile(const std::string& file
 {
     vector<Patient*> patients{};
 
-    // Create a vector of possible file paths to try
-    vector<string> possiblePaths = {
-        file,                          // Original path
-        "./" + file,                   // Current directory
-        "../" + file,                  // One directory up
-        "../../" + file,               // Two directories up
-        "../PatientSystem/" + file,    // Specific path to PatientSystem
-        "PatientSystem/" + file,       // Another possible path
-        "../../PatientSystem/" + file  // Another possible path
-    };
-
-    std::ifstream inFile;
-    bool fileFound = false;
-
-    // Try each path until we find the file
-    for (const auto& path : possiblePaths) {
-        std::cout << "Trying path: " << path << std::endl;
-        inFile.open(path);
-
-        if (inFile.is_open()) {
-            std::cout << "Successfully opened file: " << path << std::endl;
-            fileFound = true;
-            break;
-        }
-
-        // Clear any error flags before trying the next path
-        inFile.clear();
+    std::ifstream inFile(file);
+    if (!inFile.is_open()) {
+        std::cerr << "Could not open file: " << file << std::endl;
+        return patients;
     }
 
-    if (fileFound) {
-        // TODO: load your file here
-        std::string line;
+    std::string line;
 
-        //This loop will read through line by line.
-        while(getline(inFile,line)) {
-            istringstream lineStream(line);
-            string id, name, dobStr, diagnosis, vitalsRaw;
-            
-            //Adding prasing for the main fields shown in patient file.
-            getline(lineStream, id, '|');
-            getline(lineStream, name, '|');
-            getline(lineStream, dobStr, '|');
-            getline(lineStream, diagnosis, '|');
-            getline(lineStream, vitalsRaw);
+    //This loop will read through line by line.
+    while (getline(inFile, line)) {
+        istringstream lineStream(line);
+        string id, name, dobStr, diagnosis, vitalsRaw;
 
-            //Parse the name in format (Lastname, Firstname)
-            string lastName, firstName;
-            istringstream nameStream(name);
-            getline(nameStream, lastName, ',');
-            getline(nameStream, firstName);
+        //Adding prasing for the main fields shown in patient file.
+        getline(lineStream, id, '|');
+        getline(lineStream, name, '|');
+        getline(lineStream, dobStr, '|');
+        getline(lineStream, diagnosis, '|');
+        getline(lineStream, vitalsRaw);
 
-            //Parse date of birth
-            tm dob = {};
-            istringstream dobStream(dobStr);
-            dobStream >> get_time(&dob, "%d-%m-%Y");
+        //Parse the name in format (Lastname, Firstname)
+        string lastName, firstName;
+        istringstream nameStream(name);
+        getline(nameStream, lastName, ',');
+        getline(nameStream, firstName);
 
-            //Create patient and adding diagnosis
-            Patient* patient = new Patient(firstName, lastName, dob);
-            patient->addDiagnosis(diagnosis);
+        //Parse date of birth
+        tm dob = {};
+        istringstream dobStream(dobStr);
+        dobStream >> get_time(&dob, "%d-%m-%Y");
 
-            //Check if there is vital already, if yes, parse them.
-            if (!vitalsRaw.empty()) {
-                istringstream vitalsStream(vitalsRaw);
-                string vitalsEntry;
-                while (getline(vitalsStream, vitalsEntry, ';')) {
-                    istringstream entryStream(vitalsEntry);
-                    string btStr, hrStr, bpStr, rrStr;
+        //Create patient and adding diagnosis
+        Patient* patient = new Patient(firstName, lastName, dob);
+        patient->addDiagnosis(diagnosis);
 
-                    getline(entryStream, btStr, ',');
-                    getline(entryStream, hrStr, ',');
-                    getline(entryStream, bpStr, ',');
-                    getline(entryStream, rrStr);
+        //Check if there is vital already, if yes, parse them.
+        if (!vitalsRaw.empty()) {
+            istringstream vitalsStream(vitalsRaw);
+            string vitalsEntry;
+            while (getline(vitalsStream, vitalsEntry, ';')) {
+                istringstream entryStream(vitalsEntry);
+                string btStr, hrStr, bpStr, rrStr;
 
-                    float bt = stof(btStr);
-                    int hr = stoi(hrStr);
-                    int bp = stoi(bpStr);
-                    int rr = stoi(rrStr);
+                getline(entryStream, btStr, ',');
+                getline(entryStream, hrStr, ',');
+                getline(entryStream, bpStr, ',');
+                getline(entryStream, rrStr);
 
-                    Vitals* vitals = new Vitals(bt, bp, hr, rr);
-                    patient->addVitals(vitals);
-                }
+                float bt = stof(btStr);
+                int hr = stoi(hrStr);
+                int bp = stoi(bpStr);
+                int rr = stoi(rrStr);
 
-               
+                Vitals* vitals = new Vitals(bt, bp, hr, rr);
+                patient->addVitals(vitals);
             }
-            //Finally add the patient to the vector.
-            patients.push_back(patient);
-            
+
+
         }
-        inFile.close();
-        return patients;
+        //Finally add the patient to the vector.
+        patients.push_back(patient);
+
     }
-    else
-    {
-        std::cout << "File loading failed." << std::endl;
-        return patients;
-    }
+    inFile.close();
+    return patients;
+
+
+       
 }
