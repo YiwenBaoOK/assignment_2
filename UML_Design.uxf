@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="15.1">
-  <zoom_level>9</zoom_level>
+  <zoom_level>6</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>405</x>
-      <y>387</y>
-      <w>189</w>
-      <h>171</h>
+      <x>624</x>
+      <y>414</y>
+      <w>126</w>
+      <h>114</h>
     </coordinates>
     <panel_attributes>PatientManagementSystem
 --
@@ -26,10 +26,10 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>261</x>
+      <x>528</x>
       <y>468</y>
-      <w>162</w>
-      <h>27</h>
+      <w>108</w>
+      <h>18</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
     <additional_attributes>160.0;10.0;10.0;10.0</additional_attributes>
@@ -37,10 +37,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>81</x>
-      <y>432</y>
-      <w>189</w>
-      <h>90</h>
+      <x>408</x>
+      <y>444</y>
+      <w>126</w>
+      <h>60</h>
     </coordinates>
     <panel_attributes>AbstractPatientDatabaseLoader
 --
@@ -53,23 +53,12 @@ ClostConnection()
     <additional_attributes/>
   </element>
   <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>171</x>
-      <y>513</y>
-      <w>27</w>
-      <h>99</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
-  </element>
-  <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>81</x>
-      <y>594</y>
-      <w>189</w>
-      <h>63</h>
+      <x>408</x>
+      <y>552</y>
+      <w>126</w>
+      <h>42</h>
     </coordinates>
     <panel_attributes>PatientDatabaseLoader
 --
@@ -81,10 +70,10 @@ ClostConnection()
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>747</x>
-      <y>396</y>
-      <w>189</w>
-      <h>171</h>
+      <x>852</x>
+      <y>420</y>
+      <w>126</w>
+      <h>114</h>
     </coordinates>
     <panel_attributes>Patient
 --
@@ -98,10 +87,10 @@ Opeation</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>585</x>
+      <x>744</x>
       <y>468</y>
-      <w>180</w>
-      <h>27</h>
+      <w>120</w>
+      <h>18</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;180.0;10.0</additional_attributes>
@@ -109,10 +98,10 @@ Opeation</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>837</x>
-      <y>351</y>
-      <w>27</w>
-      <h>63</h>
+      <x>912</x>
+      <y>390</y>
+      <w>18</w>
+      <h>42</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
@@ -120,10 +109,10 @@ Opeation</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>747</x>
-      <y>252</y>
-      <w>189</w>
-      <h>108</h>
+      <x>852</x>
+      <y>324</y>
+      <w>126</w>
+      <h>72</h>
     </coordinates>
     <panel_attributes>Person
 --
@@ -138,10 +127,10 @@ lastName:string,birthday;tm)</panel_attributes>
   <element>
     <id>Text</id>
     <coordinates>
-      <x>603</x>
-      <y>450</y>
-      <w>27</w>
-      <h>36</h>
+      <x>756</x>
+      <y>456</y>
+      <w>18</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>1
 style=wordwrap</panel_attributes>
@@ -150,10 +139,10 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Text</id>
     <coordinates>
-      <x>720</x>
-      <y>450</y>
-      <w>36</w>
-      <h>36</h>
+      <x>834</x>
+      <y>456</y>
+      <w>24</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>0..*
 style=wordwrap</panel_attributes>
@@ -162,10 +151,10 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Text</id>
     <coordinates>
-      <x>855</x>
-      <y>567</y>
-      <w>27</w>
-      <h>36</h>
+      <x>924</x>
+      <y>534</y>
+      <w>18</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>1
 style=wordwrap</panel_attributes>
@@ -174,10 +163,10 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Text</id>
     <coordinates>
-      <x>846</x>
-      <y>594</y>
-      <w>36</w>
-      <h>36</h>
+      <x>918</x>
+      <y>552</y>
+      <w>24</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>0..*
 style=wordwrap</panel_attributes>
@@ -186,10 +175,10 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>828</x>
-      <y>558</y>
-      <w>27</w>
-      <h>72</h>
+      <x>906</x>
+      <y>528</y>
+      <w>18</w>
+      <h>48</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
@@ -197,10 +186,10 @@ style=wordwrap</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>747</x>
-      <y>612</y>
-      <w>189</w>
-      <h>108</h>
+      <x>852</x>
+      <y>564</y>
+      <w>126</w>
+      <h>72</h>
     </coordinates>
     <panel_attributes>Vitals
 --
@@ -215,32 +204,32 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>351</x>
-      <y>549</y>
-      <w>135</w>
-      <h>162</h>
+      <x>606</x>
+      <y>522</y>
+      <w>72</w>
+      <h>198</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
-    <additional_attributes>130.0;10.0;10.0;160.0</additional_attributes>
+    <additional_attributes>100.0;10.0;10.0;310.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>522</x>
-      <y>549</y>
-      <w>117</w>
-      <h>162</h>
+      <x>702</x>
+      <y>522</y>
+      <w>108</w>
+      <h>198</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;110.0;160.0</additional_attributes>
+    <additional_attributes>10.0;10.0;160.0;310.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>261</x>
-      <y>693</y>
-      <w>189</w>
-      <h>63</h>
+      <x>546</x>
+      <y>708</y>
+      <w>138</w>
+      <h>42</h>
     </coordinates>
     <panel_attributes>HospitalNotificationSystemFacade
 --
@@ -252,16 +241,79 @@ style=wordwrap</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>522</x>
-      <y>693</y>
-      <w>189</w>
-      <h>63</h>
+      <x>732</x>
+      <y>708</y>
+      <w>126</w>
+      <h>42</h>
     </coordinates>
     <panel_attributes>GPNotificationSystemFacade
 --
 
 --
 +sendAlertForPatient(p: Patient)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>312</x>
+      <y>468</y>
+      <w>108</w>
+      <h>78</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>160.0;10.0;90.0;10.0;90.0;110.0;10.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>312</x>
+      <y>528</y>
+      <w>102</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>150.0;160.0;90.0;160.0;90.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>192</x>
+      <y>510</y>
+      <w>126</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>PatientFileLoaderAdapter
+--
+
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>462</x>
+      <y>498</y>
+      <w>18</w>
+      <h>66</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>402</x>
+      <y>612</y>
+      <w>126</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>PatientFileLoader
+--
+
+--
+</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>
