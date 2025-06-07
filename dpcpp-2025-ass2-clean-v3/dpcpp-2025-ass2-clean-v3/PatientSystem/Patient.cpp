@@ -12,7 +12,7 @@
 using namespace std;
 
 const std::string Diagnosis::CORDYCEPS_BRAIN_INFECTION = "Cordyceps Brain Infection";
-const std::string Diagnosis::KEPRALS_SYNDROME = "Kepral’s Syndrome";
+const std::string Diagnosis::KEPRALS_SYNDROME = "Kepral's Syndrome";
 const std::string Diagnosis::ANDROMEDA_STRAIN= "Andromeda Strain";
 
 
@@ -72,12 +72,11 @@ void Patient::addVitals(const Vitals* v)
 {
 	_vitals.push_back(v);
 	// TODO: calculate alert levels
-	//This makes sure that onl new vitals will be calculated
+	//This makes sure that only new vitals will be calculated
 	if (_alertCalculator && v != nullptr) {
 		AlertLevel newLevel = _alertCalculator->calculateAlertLevel(*this, *v);
 		setAlertLevel(newLevel);
 	}
-
 
 }
 
