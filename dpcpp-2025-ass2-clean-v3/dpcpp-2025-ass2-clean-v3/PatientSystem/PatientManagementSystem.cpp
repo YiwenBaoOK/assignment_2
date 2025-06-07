@@ -12,6 +12,10 @@
 #include "HospitalAlertSystemFacade.h"
 #include "PatientFileLoaderAdapter.h"
 
+#include "CordycepsBrainInfectionCalculator.h"
+#include "KepralsSyndromeCalculator.h"
+#include "AndromedaStrainCalculator.h"
+
 using namespace std;
 
 
@@ -41,7 +45,18 @@ void PatientManagementSystem::init()
 	}
 
 	for (Patient* p : _patients) {
-		// TODO: do any processing you need here
+		// Assign appropriate calculator based on patient's diagnosis
+		const std::string& diagnosis = p->primaryDiagnosis();
+
+		if (diagnosis == Diagnosis::CORDYCEPS_BRAIN_INFECTION) {
+			p->AlertCalculation(std::make_unique<CordycepsBrainInfectionCalculator>());
+		}
+		else if (diagnosis == Diagnosis::KEPRALS_SYNDROME) {
+			p->AlertCalculation(std::make_unique<KepralsSyndromeCalculator>());
+		}
+		else if (diagnosis == Diagnosis::ANDROMEDA_STRAIN) {
+			p->AlertCalculation(std::make_unique<AndromedaStrainCalculator>());
+		}
 	}
 }
 
