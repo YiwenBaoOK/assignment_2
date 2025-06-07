@@ -139,8 +139,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="AlertLevelCalculatorCalculator.cpp" />
+    <ClCompile Include="AlertLevelCalculator.cpp" />
     <ClCompile Include="CompositePatientLoader.cpp" />
+    <ClCompile Include="CordycepsBrainInfectionCalculator.cpp" />
     <ClCompile Include="GPNotificationSystemFacade.cpp" />
     <ClCompile Include="HospitalAlertSystemFacade.cpp" />
     <ClCompile Include="Patient.cpp" />
@@ -154,8 +155,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AbstractPatientDatabaseLoader.h" />
-    <ClInclude Include="AlertLevelCalculatorCalculator.h" />
+    <ClInclude Include="AlertLevelCalculator.h" />
     <ClInclude Include="CompositePatientLoader.h" />
+    <ClInclude Include="CordycepsBrainInfectionCalculator.h" />
     <ClInclude Include="GPNotificationSystemFacade.h" />
     <ClInclude Include="HospitalAlertSystemFacade.h" />
     <ClInclude Include="PatientAlertLevels.h" />

@@ -48,7 +48,10 @@
     <ClCompile Include="CompositePatientLoader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="AlertLevelCalculatorCalculator.cpp">
+    <ClCompile Include="AlertLevelCalculator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CordycepsBrainInfectionCalculator.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -89,7 +92,10 @@
     <ClInclude Include="CompositePatientLoader.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="AlertLevelCalculatorCalculator.h">
+    <ClInclude Include="AlertLevelCalculator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CordycepsBrainInfectionCalculator.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
