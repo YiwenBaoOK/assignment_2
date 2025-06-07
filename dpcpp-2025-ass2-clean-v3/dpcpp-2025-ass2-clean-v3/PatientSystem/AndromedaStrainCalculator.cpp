@@ -5,7 +5,7 @@
 AlertLevel AndromedaStrainCalculator::calculateAlertLevel(const Patient& patient, const Vitals& vitals) const {
     int bloodPressure = vitals.BP();
 
-    // Cordyceps Brain Infection algorithm based on Respiratory Rate (RR)
+    // Andromeda Strain's algorithm based on Blood Pressure (BP)
     if (bloodPressure > 140) {
         return AlertLevel::Red;
     }

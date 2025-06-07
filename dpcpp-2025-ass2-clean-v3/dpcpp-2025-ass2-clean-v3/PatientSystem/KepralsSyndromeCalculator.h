@@ -1,5 +1,6 @@
-#pragma once
-class KepralsSyndromeCalculator
-{
-};
+#include "AlertLevelCalculator.h"
 
+class KepralsSyndromeCalculator : public AlertLevelCalculator {
+public:
+    AlertLevel calculateAlertLevel(const Patient& patient, const Vitals& vitals) const override;
+};
