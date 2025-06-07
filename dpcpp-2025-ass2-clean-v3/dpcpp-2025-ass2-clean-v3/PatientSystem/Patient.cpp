@@ -5,11 +5,9 @@
 #include <sstream>
 
 #include "Vitals.h"
-#include "AlertLevelCalculator.h"
 #include "CordycepsBrainInfectionCalculator.h"
-#include "KepralssyndromeCalculator.h"
+#include "KepralsSyndromeCalculator.h"
 #include "AndromedaStrainCalculator.h"
-
 
 using namespace std;
 
@@ -74,6 +72,11 @@ void Patient::addVitals(const Vitals* v)
 {
 	_vitals.push_back(v);
 	// TODO: calculate alert levels
+	//This makes sure that onl new vitals will be calculated
+	if (_alertCalculator && v != nullptr) {
+		AlertLevel newLevel = _alertCalculator->calculateAlertLevel(*this, *v);
+		setAlertLevel(newLevel);
+	}
 
 
 }
@@ -104,19 +107,9 @@ void Patient::setAlertLevel(AlertLevel level)
 	}
 }
 
-std::unique_ptr<AlertLevelCalculator> Patient::createCalculator(const std::string& diagnosis) const
+void Patient::AlertCalculation(std::unique_ptr<AlertLevelCalculator> calculator)
 {
-	if (diagnosis == Diagnosis::CORDYCEPS_BRAIN_INFECTION) {
-		return std::make_unique<CordycepsBrainInfectionCalculator>();
-	}
-	else if (diagnosis == Diagnosis::KEPRALS_SYNDROME) {
-		return std::make_unique<KepralsSyndromeCalculator>();
-	}
-	else if (diagnosis == Diagnosis::ANDROMEDA_STRAIN) {
-		return std::make_unique<AndromedaStrainCalculator>();
-	}
-	else {
-		// Default to a basic calculator that always returns Green
-		return nullptr;
-	}
+	//The patient can use it to do calculations of alert levels.
+	_alertCalculator = std::move(calculator);
+
 }

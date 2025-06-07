@@ -5,10 +5,11 @@
 #include <vector>
 
 #include "PatientAlertLevels.h"
+#include "AlertLevelCalculator.h"
+
 
 // forward declare classes
 class Vitals;
-class AlertLevelCalculator;
 
 class Diagnosis {
 public:
@@ -46,9 +47,11 @@ public:
 	// patients have an alert level (green, yellow, orange, red) calculated from their disease and and their last vitals
 	void setAlertLevel(AlertLevel level);
 	const AlertLevel alertLevel() const { return _alertLevel; }
+
+	void AlertCalculation(std::unique_ptr<AlertLevelCalculator> calculator);
+
 private:
-	//Choose the corresponding calculator based on the patient's diagnosis
-	std::unique_ptr<AlertLevelCalculator> createCalculator(const std::string& diagnosis) const;
+	std::unique_ptr<AlertLevelCalculator> _alertCalculator;
 
 protected:
 	std::vector<std::string> _diagnosis;
