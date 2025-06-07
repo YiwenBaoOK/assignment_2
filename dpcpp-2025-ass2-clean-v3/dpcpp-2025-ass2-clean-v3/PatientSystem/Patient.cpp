@@ -5,6 +5,10 @@
 #include <sstream>
 
 #include "Vitals.h"
+#include "AlertLevelCalculator.h"
+#include "CordycepsBrainInfectionCalculator.h"
+#include "KepralssyndromeCalculator.h"
+#include "AndromedaStrainCalculator.h"
 
 
 using namespace std;
@@ -97,5 +101,22 @@ void Patient::setAlertLevel(AlertLevel level)
 			break;
 		}
 		cout << endl;
+	}
+}
+
+std::unique_ptr<AlertLevelCalculator> Patient::createCalculator(const std::string& diagnosis) const
+{
+	if (diagnosis == Diagnosis::CORDYCEPS_BRAIN_INFECTION) {
+		return std::make_unique<CordycepsBrainInfectionCalculator>();
+	}
+	else if (diagnosis == Diagnosis::KEPRALS_SYNDROME) {
+		return std::make_unique<KepralsSyndromeCalculator>();
+	}
+	else if (diagnosis == Diagnosis::ANDROMEDA_STRAIN) {
+		return std::make_unique<AndromedaStrainCalculator>();
+	}
+	else {
+		// Default to a basic calculator that always returns Green
+		return nullptr;
 	}
 }
