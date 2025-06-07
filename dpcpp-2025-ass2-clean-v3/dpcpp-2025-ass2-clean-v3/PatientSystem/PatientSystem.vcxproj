@@ -140,10 +140,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="AlertLevelCalculator.cpp" />
+    <ClCompile Include="AndromedaStrainCalculator.cpp" />
     <ClCompile Include="CompositePatientLoader.cpp" />
     <ClCompile Include="CordycepsBrainInfectionCalculator.cpp" />
     <ClCompile Include="GPNotificationSystemFacade.cpp" />
     <ClCompile Include="HospitalAlertSystemFacade.cpp" />
+    <ClCompile Include="KepralsSyndromeCalculator.cpp" />
     <ClCompile Include="Patient.cpp" />
     <ClCompile Include="PatientDatabaseLoader.cpp" />
     <ClCompile Include="PatientFileLoader.cpp" />
@@ -156,10 +158,12 @@
   <ItemGroup>
     <ClInclude Include="AbstractPatientDatabaseLoader.h" />
     <ClInclude Include="AlertLevelCalculator.h" />
+    <ClInclude Include="AndromedaStrainCalculator.h" />
     <ClInclude Include="CompositePatientLoader.h" />
     <ClInclude Include="CordycepsBrainInfectionCalculator.h" />
     <ClInclude Include="GPNotificationSystemFacade.h" />
     <ClInclude Include="HospitalAlertSystemFacade.h" />
+    <ClInclude Include="KepralsSyndromeCalculator.h" />
     <ClInclude Include="PatientAlertLevels.h" />
     <ClInclude Include="Patient.h" />
     <ClInclude Include="PatientDatabaseLoader.h" />
