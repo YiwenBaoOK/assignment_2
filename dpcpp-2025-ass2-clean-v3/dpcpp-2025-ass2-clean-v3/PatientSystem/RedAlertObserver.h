@@ -10,6 +10,6 @@ public:
     virtual ~RedAlertObserver() = default;
 
     // Called when a patient's alert level changes
-    virtual void onAlertLevelChanged(Patient* patient) = 0;
+    virtual void AlertLevelChanged(Patient* patient) = 0;
 };
 

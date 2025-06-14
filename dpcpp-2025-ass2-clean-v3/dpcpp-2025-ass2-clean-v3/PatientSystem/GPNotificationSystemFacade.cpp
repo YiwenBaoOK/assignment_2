@@ -18,3 +18,10 @@ void GPNotificationSystemFacade::sendGPNotificationForPatient(Patient* p)
 		std::cout << "Patient: " << p->humanReadableID() << " should be followed up" << std::endl;
 	}
 }
+
+void GPNotificationSystemFacade::AlertLevelChanged(Patient* patient)
+{
+	//This will be called automatically when patient's alert level rises to red.
+	sendGPNotificationForPatient(patient);
+
+}

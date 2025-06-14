@@ -136,7 +136,7 @@ void Patient::alertSubscribers()
 {
 	for (RedAlertObserver* subscriber : _subscribers) {
 		if (subscriber != nullptr) {
-			subscriber->onAlertLevelChanged(this);
+			subscriber->AlertLevelChanged(this);
 		}
 }
 }

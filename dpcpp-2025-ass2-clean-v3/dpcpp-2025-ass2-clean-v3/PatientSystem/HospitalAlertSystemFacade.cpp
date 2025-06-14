@@ -18,3 +18,9 @@ void HospitalAlertSystemFacade::sendAlertForPatient(Patient* p)
 		std::cout << "Patient: " << p->humanReadableID() << " has a critical alert level" << std::endl;
 	}
 }
+
+void HospitalAlertSystemFacade::AlertLevelChanged(Patient* patient)
+{
+	//This will be called automatically when patient's alert level rises to red.
+	sendAlertForPatient(patient);
+}

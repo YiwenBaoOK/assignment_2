@@ -57,6 +57,10 @@ void PatientManagementSystem::init()
 		else if (diagnosis == Diagnosis::ANDROMEDA_STRAIN) {
 			p->AlertCalculation(std::make_unique<AndromedaStrainCalculator>());
 		}
+
+		//Register the notification systems as observers  for the patients.
+		p->addSubscriber(_hospitalAlertSystem.get());
+		p->addSubscriber(_gpNotificationSystem.get());
 	}
 }
 
