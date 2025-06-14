@@ -1,3 +1,11 @@
-﻿  RedAlertObserver.cpp
-  LINK : C:\Unisa\NewC++\Projects\assignment_2\dpcpp-2025-ass2-clean-v3\dpcpp-2025-ass2-clean-v3\x64\Debug\PatientSystem.exe not found or not built by the last incremental link; performing full link
+﻿  AndromedaStrainCalculator.cpp
+  CordycepsBrainInfectionCalculator.cpp
+  GPNotificationSystemFacade.cpp
+  HospitalAlertSystemFacade.cpp
+  KepralsSyndromeCalculator.cpp
+  Patient.cpp
+  PatientDatabaseLoader.cpp
+  PatientFileLoader.cpp
+  PatientManagementSystem.cpp
+  Generating Code...
   PatientSystem.vcxproj -> C:\Unisa\NewC++\Projects\assignment_2\dpcpp-2025-ass2-clean-v3\dpcpp-2025-ass2-clean-v3\x64\Debug\PatientSystem.exe

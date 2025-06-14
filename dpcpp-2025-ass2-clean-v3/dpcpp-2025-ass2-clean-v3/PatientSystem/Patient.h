@@ -6,6 +6,7 @@
 
 #include "PatientAlertLevels.h"
 #include "AlertLevelCalculator.h"
+#include "RedAlertObserver.h"
 
 
 // forward declare classes
@@ -49,6 +50,11 @@ public:
 	const AlertLevel alertLevel() const { return _alertLevel; }
 
 	void AlertCalculation(std::unique_ptr<AlertLevelCalculator> calculator);
+
+	//Managing the Subscribers(Observers) for the patient's alert.
+	void addSubscriber(RedAlertObserver* observer);
+	void removeSubscriber(RedAlertObserver* observer);
+	void alertSubscribers();
 
 private:
 	std::unique_ptr<AlertLevelCalculator> _alertCalculator;
