@@ -60,9 +60,6 @@
     <ClCompile Include="AndromedaStrainCalculator.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="AlertSubscriber.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Person.h">
@@ -111,9 +108,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="AndromedaStrainCalculator.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="AlertSubscriber.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

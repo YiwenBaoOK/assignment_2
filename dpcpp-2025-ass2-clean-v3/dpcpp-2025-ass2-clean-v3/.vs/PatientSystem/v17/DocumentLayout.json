@@ -3,20 +3,8 @@
   "WorkspaceRootPath": "C:\\Unisa\\NewC\u002B\u002B\\Projects\\assignment_2\\dpcpp-2025-ass2-clean-v3\\dpcpp-2025-ass2-clean-v3\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EFB13491-019B-424B-BCFB-1D454CB5D0FE}|PatientSystem\\PatientSystem.vcxproj|C:\\Unisa\\NewC\u002B\u002B\\Projects\\assignment_2\\dpcpp-2025-ass2-clean-v3\\dpcpp-2025-ass2-clean-v3\\PatientSystem\\AlertSubscriber.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{EFB13491-019B-424B-BCFB-1D454CB5D0FE}|PatientSystem\\PatientSystem.vcxproj|solutionrelative:PatientSystem\\AlertSubscriber.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EFB13491-019B-424B-BCFB-1D454CB5D0FE}|PatientSystem\\PatientSystem.vcxproj|C:\\Unisa\\NewC\u002B\u002B\\Projects\\assignment_2\\dpcpp-2025-ass2-clean-v3\\dpcpp-2025-ass2-clean-v3\\PatientSystem\\Patient.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{EFB13491-019B-424B-BCFB-1D454CB5D0FE}|PatientSystem\\PatientSystem.vcxproj|solutionrelative:PatientSystem\\Patient.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EFB13491-019B-424B-BCFB-1D454CB5D0FE}|PatientSystem\\PatientSystem.vcxproj|C:\\Unisa\\NewC\u002B\u002B\\Projects\\assignment_2\\dpcpp-2025-ass2-clean-v3\\dpcpp-2025-ass2-clean-v3\\PatientSystem\\PatientManagementSystem.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{EFB13491-019B-424B-BCFB-1D454CB5D0FE}|PatientSystem\\PatientSystem.vcxproj|solutionrelative:PatientSystem\\PatientManagementSystem.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EFB13491-019B-424B-BCFB-1D454CB5D0FE}|PatientSystem\\PatientSystem.vcxproj|C:\\Unisa\\NewC\u002B\u002B\\Projects\\assignment_2\\dpcpp-2025-ass2-clean-v3\\dpcpp-2025-ass2-clean-v3\\PatientSystem\\PatientFileLoader.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{EFB13491-019B-424B-BCFB-1D454CB5D0FE}|PatientSystem\\PatientSystem.vcxproj|solutionrelative:PatientSystem\\PatientFileLoader.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{EFB13491-019B-424B-BCFB-1D454CB5D0FE}|PatientSystem\\PatientSystem.vcxproj|C:\\Unisa\\NewC\u002B\u002B\\Projects\\assignment_2\\dpcpp-2025-ass2-clean-v3\\dpcpp-2025-ass2-clean-v3\\PatientSystem\\RedAlertObserver.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{EFB13491-019B-424B-BCFB-1D454CB5D0FE}|PatientSystem\\PatientSystem.vcxproj|solutionrelative:PatientSystem\\RedAlertObserver.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,51 +19,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AlertSubscriber.h",
-              "DocumentMoniker": "C:\\Unisa\\NewC\u002B\u002B\\Projects\\assignment_2\\dpcpp-2025-ass2-clean-v3\\dpcpp-2025-ass2-clean-v3\\PatientSystem\\AlertSubscriber.h",
-              "RelativeDocumentMoniker": "PatientSystem\\AlertSubscriber.h",
-              "ToolTip": "C:\\Unisa\\NewC\u002B\u002B\\Projects\\assignment_2\\dpcpp-2025-ass2-clean-v3\\dpcpp-2025-ass2-clean-v3\\PatientSystem\\AlertSubscriber.h*",
-              "RelativeToolTip": "PatientSystem\\AlertSubscriber.h*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Title": "RedAlertObserver.h",
+              "DocumentMoniker": "C:\\Unisa\\NewC\u002B\u002B\\Projects\\assignment_2\\dpcpp-2025-ass2-clean-v3\\dpcpp-2025-ass2-clean-v3\\PatientSystem\\RedAlertObserver.h",
+              "RelativeDocumentMoniker": "PatientSystem\\RedAlertObserver.h",
+              "ToolTip": "C:\\Unisa\\NewC\u002B\u002B\\Projects\\assignment_2\\dpcpp-2025-ass2-clean-v3\\dpcpp-2025-ass2-clean-v3\\PatientSystem\\RedAlertObserver.h*",
+              "RelativeToolTip": "PatientSystem\\RedAlertObserver.h*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-06-14T09:50:41.094Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PatientFileLoader.cpp",
-              "DocumentMoniker": "C:\\Unisa\\NewC\u002B\u002B\\Projects\\assignment_2\\dpcpp-2025-ass2-clean-v3\\dpcpp-2025-ass2-clean-v3\\PatientSystem\\PatientFileLoader.cpp",
-              "RelativeDocumentMoniker": "PatientSystem\\PatientFileLoader.cpp",
-              "ToolTip": "C:\\Unisa\\NewC\u002B\u002B\\Projects\\assignment_2\\dpcpp-2025-ass2-clean-v3\\dpcpp-2025-ass2-clean-v3\\PatientSystem\\PatientFileLoader.cpp",
-              "RelativeToolTip": "PatientSystem\\PatientFileLoader.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-06-07T15:26:18.591Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PatientManagementSystem.cpp",
-              "DocumentMoniker": "C:\\Unisa\\NewC\u002B\u002B\\Projects\\assignment_2\\dpcpp-2025-ass2-clean-v3\\dpcpp-2025-ass2-clean-v3\\PatientSystem\\PatientManagementSystem.cpp",
-              "RelativeDocumentMoniker": "PatientSystem\\PatientManagementSystem.cpp",
-              "ToolTip": "C:\\Unisa\\NewC\u002B\u002B\\Projects\\assignment_2\\dpcpp-2025-ass2-clean-v3\\dpcpp-2025-ass2-clean-v3\\PatientSystem\\PatientManagementSystem.cpp",
-              "RelativeToolTip": "PatientSystem\\PatientManagementSystem.cpp",
-              "ViewState": "AgIAAGkAAAAAAAAAAAAAAJAAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-06-07T14:51:38.052Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Patient.cpp",
-              "DocumentMoniker": "C:\\Unisa\\NewC\u002B\u002B\\Projects\\assignment_2\\dpcpp-2025-ass2-clean-v3\\dpcpp-2025-ass2-clean-v3\\PatientSystem\\Patient.cpp",
-              "RelativeDocumentMoniker": "PatientSystem\\Patient.cpp",
-              "ToolTip": "C:\\Unisa\\NewC\u002B\u002B\\Projects\\assignment_2\\dpcpp-2025-ass2-clean-v3\\dpcpp-2025-ass2-clean-v3\\PatientSystem\\Patient.cpp",
-              "RelativeToolTip": "PatientSystem\\Patient.cpp",
-              "ViewState": "AgIAADwAAAAAAAAAAAAAAD4AAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-06-07T14:01:09.511Z",
+              "WhenOpened": "2025-06-14T09:56:29.613Z",
               "EditorCaption": ""
             }
           ]
