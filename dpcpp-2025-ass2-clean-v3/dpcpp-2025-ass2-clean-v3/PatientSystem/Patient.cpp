@@ -1,5 +1,6 @@
 #include "Patient.h"
 
+#include <algorithm>
 #include <iomanip>
 #include <iostream>
 #include <sstream>
@@ -111,4 +112,30 @@ void Patient::AlertCalculation(std::unique_ptr<AlertLevelCalculator> calculator)
 	//The patient can use it to do calculations of alert levels.
 	_alertCalculator = std::move(calculator);
 
+}
+
+void Patient::addSubscriber(RedAlertObserver* subscriber)
+{
+	if (subscriber != nullptr) {
+		_subscribers.push_back(subscriber);
+}
+}
+
+void Patient::removeSubscriber(RedAlertObserver* subscriber)
+{	//This can loop through the vector with effciency
+	for (auto it = _subscribers.begin(); it != _subscribers.end(); ++it) {
+		if (*it = subscriber) {     // Finding the subscriber that would like to remove
+			_subscribers.erase(it); // remove the subscriber
+			break;					// exit after remove the subscriber to avoid iterator invalidation
+		}
+}
+}
+
+void Patient::alertSubscribers()
+{
+	for (RedAlertObserver* subscriber : _subscribers) {
+		if (subscriber != nullptr) {
+			subscriber->onAlertLevelChanged(this);
+		}
+}
 }

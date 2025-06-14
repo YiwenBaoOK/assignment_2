@@ -64,6 +64,9 @@ protected:
 	std::vector<const Vitals*> _vitals;
 	AlertLevel _alertLevel;
 
+	// The list of subscibers for receiving the patients' alerts.
+	std::vector<RedAlertObserver*> _subscribers;
+
 	friend std::ostream& operator<<(std::ostream& os, const Patient& p);
 };
 
