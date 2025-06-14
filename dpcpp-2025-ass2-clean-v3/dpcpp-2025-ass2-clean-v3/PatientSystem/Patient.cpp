@@ -101,6 +101,7 @@ void Patient::setAlertLevel(AlertLevel level)
 			break;
 		case AlertLevel::Red:
 			cout << "Red";
+			alertSubscribers();
 			break;
 		}
 		cout << endl;
@@ -124,7 +125,7 @@ void Patient::addSubscriber(RedAlertObserver* subscriber)
 void Patient::removeSubscriber(RedAlertObserver* subscriber)
 {	//This can loop through the vector with effciency
 	for (auto it = _subscribers.begin(); it != _subscribers.end(); ++it) {
-		if (*it = subscriber) {     // Finding the subscriber that would like to remove
+		if (*it == subscriber) {     // Finding the subscriber that would like to remove
 			_subscribers.erase(it); // remove the subscriber
 			break;					// exit after remove the subscriber to avoid iterator invalidation
 		}
